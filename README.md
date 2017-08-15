@@ -29,3 +29,4 @@ var arr2 = [];//用来存放模板修改后全部的文件标识
 单元格文本内容悬浮展示(非title)，富文本内容展示 overflow:scroll
 后台返回的是html代码段，前端展示用innerHTML、JQ .html()
 
+7. pagecontrol.js
