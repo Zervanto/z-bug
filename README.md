@@ -30,3 +30,9 @@ var arr2 = [];//用来存放模板修改后全部的文件标识
 后台返回的是html代码段，前端展示用innerHTML、JQ .html()
 
 7. pagecontrol.js
+
+8. input type="file" 调用系统相机
+
+9. xml节点获取
+
+10. touch事件兼容问题
