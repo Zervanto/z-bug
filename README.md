@@ -83,3 +83,9 @@ target:       //当前的DOM元素
 preventDefault是阻止默认行为，touch事件的默认行为就是滚动。
 
 event.preventDefault();
+
+## input的placeholder属性在ios中样式不居中的问题
+```css
+input::-webkit-input-placeholder{}
+```
+设置行高
