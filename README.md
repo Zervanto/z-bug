@@ -33,6 +33,24 @@ var arr2 = [];//用来存放模板修改后全部的文件标识
 
 8. input type="file" 调用系统相机
 
+如何获取拍到的照片
+```js
+$('.openCamera').on('change', function() {
+		this_=this;
+		var num = $(this).attr('id');
+      var $c = document.querySelectorAll('.openCamera')[num];//上传出发按钮
+      var file = $c.files[0];//获取file对象单张
+      var reader = new FileReader();//创建filereader对象
+          reader.readAsDataURL(file);//转换数据
+          reader.onload = function(e){//加载ok时触发的事件
+          	$(this_).parent().parent().append('<div id="" style="background: url('+e.target.result+') center center ;background-size:cover;" class="subset photo" data-PicUrl="'+e.target.result+'"><img src="../../img/delete.png" class="delete_pic"/></div>');
+          	
+          	magnifyPic(); //图片放大缩小c
+			deletePhoto(); //删除本张照片
+    	 };
+	})
+```
+
 9. xml节点获取
 
 10. touch事件兼容问题
@@ -89,3 +107,5 @@ event.preventDefault();
 input::-webkit-input-placeholder{}
 ```
 设置行高
+
+
