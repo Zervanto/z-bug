@@ -112,3 +112,16 @@ input::-webkit-input-placeholder{}
 
 ## sessionStorage
 sessionStorage和localStorage做为HTML5新特性，被广泛应用于客户端缓存技术。不过这个有个误区，两者虽然对存储的内容大小没有限制，但是存入的东西都被转换成了字符串，也就是说无法存入数组或者对象，就算存入了也会被转化为字符串。
+
+## android fixed定位在页面底部的dom元素在键盘弹出时，会被顶上去
+```js
+var h = window.body.scrollHeight;
+window.resize=function(){
+   if(window.body.scrollHeight<h){
+   	do somethings
+   }else{
+   	do other things
+   }
+}
+```
+
