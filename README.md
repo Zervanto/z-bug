@@ -125,3 +125,25 @@ window.resize=function(){
 }
 ```
 
+使用mui.trigger()方法可以动态触发特定DOM元素上的事件。
+
+.trigger( element , event , data )
+
+element：Type: Element，触发事件的DOM元素
+
+event：Type: String，事件名字，例如：‘tap‘、‘swipeleft‘
+
+data：Type: Object，需要传递给事件的业务参数
+
+示例
+
+自动触发按钮的点击事件：
+
+var btn = document.getElementById("submit");
+//监听点击事件
+btn.addEventListener("tap",function () {
+  console.log("tap event trigger");
+});
+//触发submit按钮的点击事件
+mui.trigger(btn,'tap');
+  部分mui控件监听的事件无法通过mui.trigger触发，比如无法实现自动触发mui返回图标，实现关闭当前页面的功能，该部分逻辑正在优化中 
