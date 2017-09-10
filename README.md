@@ -147,3 +147,16 @@ btn.addEventListener("tap",function () {
 //触发submit按钮的点击事件
 mui.trigger(btn,'tap');
   部分mui控件监听的事件无法通过mui.trigger触发，比如无法实现自动触发mui返回图标，实现关闭当前页面的功能，该部分逻辑正在优化中 
+  
+  
+ ## 移动端 overflow：sroll 失效问题 
+ 
+ 
+ ## meta标签
+ ```html
+<!-- 忽略IOS将页面中的数字识别为电话号码 -->
+<meta name="format-detection" content="telephone=no" />
+<!-- 忽略Android平台中对邮箱地址的识别 -->
+<meta name="format-detection" content="email=no" />
+``` 
+  
