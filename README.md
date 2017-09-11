@@ -158,5 +158,32 @@ mui.trigger(btn,'tap');
 <meta name="format-detection" content="telephone=no" />
 <!-- 忽略Android平台中对邮箱地址的识别 -->
 <meta name="format-detection" content="email=no" />
-``` 
-  
+```
+
+## mui.confirm 会不会想alert一样阻塞页面
+
+ JS 提示框 alert()、confirm()、prompt()的三者的区别
+
+使用消息框 使用警告、提示和确认 
+可以使用警告、确认和提示消息框来获得用户的输入。这些消息框是 window 对象的接口方法。由于 window 对象位于对象层次的顶层，因此实际应用中不必使用这些消息框的全名（例如 "window.alert()"），不过采用全名是一个好注意，这样有助于您记住这些消息框属于哪个对象。 
+
+警告消息框 （alert）
+alert 方法有一个参数，即希望对用户显示的文本字符串。该字符串不是 HTML 格式。该消息框提供了一个“确定”按钮让用户关闭该消息框，并且该消息框是模式对话框，也就是说，用户必须先关闭该消息框然后才能继续进行操作。 
+window.alert("欢迎！请按“确定”继续。"); 
+
+
+确认消息框 （confirm）
+使用确认消息框可向用户问一个“是-或-否”问题，并且用户可以选择单击“确定”按钮或者单击“取消”按钮。confirm 方法的返回值为 true 或 false。该消息框也是模式对话框：用户必须在响应该对话框（单击一个按钮）将其关闭后，才能进行下一步操作。 
+
+var truthBeTold = window.confirm("单击“确定”继续。单击“取消”停止。"); 
+if (truthBeTold) { 
+window.alert("欢迎访问我们的 Web 页！"); 
+} else window.alert("再见啦！"); 
+
+
+提示消息框 （prompt）
+提示消息框提供了一个文本字段，用户可以在此字段输入一个答案来响应您的提示。该消息框有一个“确定”按钮和一个“取消”按钮。如果您提供了一个辅助字符串参数，则提示消息框将在文本字段显示该辅助字符串作为默认响应。否则，默认文本为 "<undefined>"。 
+
+与alert( ) 和 confirm( ) 方法类似，prompt 方法也将显示一个模式消息框。用户在继续操作之前必须先关闭该消息框 
+
+var theResponse = window.prompt("欢迎？","请在此输入您的姓名。");
