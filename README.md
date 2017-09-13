@@ -160,7 +160,7 @@ mui.trigger(btn,'tap');
 <meta name="format-detection" content="email=no" />
 ```
 
-## mui.confirm 会不会想alert一样阻塞页面
+## mui.confirm 不会想alert一样阻塞页面
 
  JS 提示框 alert()、confirm()、prompt()的三者的区别
 
@@ -187,3 +187,12 @@ window.alert("欢迎访问我们的 Web 页！");
 与alert( ) 和 confirm( ) 方法类似，prompt 方法也将显示一个模式消息框。用户在继续操作之前必须先关闭该消息框 
 
 var theResponse = window.prompt("欢迎？","请在此输入您的姓名。");
+
+## mui上拉加载区域会导致click事件失效 需要使用tap
+
+
+## indexOf  函数返回值  校验 
+只能输入数字字母
+
+
+
