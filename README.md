@@ -194,5 +194,9 @@ var theResponse = window.prompt("欢迎？","请在此输入您的姓名。");
 ## indexOf  函数返回值  校验 
 只能输入数字字母
 
+## input 光标控制
+
+## mui坑真尼玛多
+
 
 
