@@ -14,3 +14,5 @@ else{
   continue;
 }
 ```
+
+tap点透事件
