@@ -27,3 +27,14 @@ click
 动态绑定tap  先off再on
 
 ## mui.confirm 给按钮绑定事件在一些设备下会失效
+
+
+### base64
+```js
+var str = "闪之轨迹3";
+
+window.btoa(window.encodeURIComponent(str))
+//"Q2hpbmElRUYlQkMlOEMlRTQlQjglQUQlRTUlOUIlQkQ="
+window.decodeURIComponent(window.atob('Q2hpbmElRUYlQkMlOEMlRTQlQjglQUQlRTUlOUIlQkQ='))
+//"闪之轨迹3"
+```
