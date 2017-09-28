@@ -38,3 +38,5 @@ window.btoa(window.encodeURIComponent(str))
 window.decodeURIComponent(window.atob('Q2hpbmElRUYlQkMlOEMlRTQlQjglQUQlRTUlOUIlQkQ='))
 //"闪之轨迹3"
 ```
+
+### input checkbox在iOS下的虚线边框问题
