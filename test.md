@@ -40,3 +40,7 @@ window.decodeURIComponent(window.atob('Q2hpbmElRUYlQkMlOEMlRTQlQjglQUQlRTUlOUIlQ
 ```
 
 ### input checkbox在iOS下的虚线边框问题
+加实线边框盖住他
+
+### 圆形img与height为1px div线对齐
+子绝父相
