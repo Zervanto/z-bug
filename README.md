@@ -200,5 +200,32 @@ var theResponse = window.prompt("欢迎？","请在此输入您的姓名。");
 
 ## vue demo
 
+## iOS下软键盘弹出会将整个页面顶上去
+mui
+1 设置弹出软键盘时自动改变webview的高度
 
+```js
+plus.webview.currentWebview().setStyle({
+    softinputMode: "adjustResize"  // 弹出软键盘时自动改变webview的高度
+});
+```
 
+2 增加样式
+
+```css
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.mui-content {
+    height: 100%;
+    overflow: auto; 
+}
+```
+
+content上必须要有height和overflow样式的控制，否则body上设置的overflow: hidden;会使所有content都无法滚动。
