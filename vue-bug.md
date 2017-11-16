@@ -2,6 +2,9 @@
 1. cnpm check
 2. cnpm update xxx
 
+## vue 2.x
+vue2.x不可以在使用muscha{{}}语法绑定属性值，而是使用v-bind
+
 ## vue-router
 3.x
 
