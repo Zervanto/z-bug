@@ -93,3 +93,11 @@ axios(url[,config])
 //发起一个GET请求
 axios('/user/12345/);
 ```
+
+## vue组件
+tab组件
+select
+table
+navbar
+
+## vuex web storage
