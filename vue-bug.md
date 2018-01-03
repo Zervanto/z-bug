@@ -4,12 +4,17 @@
 
 ## vue 2.x
 vue2.x不可以在使用muscha{{}}语法绑定属性值，而是使用v-bind
+### $emit
+
+### $refs
 
 ## vue-router
+路由器的实现原理
 3.x
+$router
 
 ## axios
-## 看看常用的get与post怎么玩
+### 看看常用的get与post怎么玩
 GET请求
 ```js
 //发起一个user请求，参数为给定的ID
@@ -48,21 +53,7 @@ axios.post('/user',{
     console.log(error);
 });
 ```
-发起一个多重并发请求
-```js
-function getUserAccount(){
-    return axios.get('/user/12345');
-}
-
-function getUserPermissions(){
-    return axios.get('/user/12345/permissions');
-}
-
-axios.all([getUerAccount(),getUserPermissions()])
-    .then(axios.spread(function(acc,pers){
-        //两个请求现在都完成
-}));
-```
+### 封装request api
 
 ## 如果你习惯jQuery的写法
 axios(config)
@@ -101,3 +92,6 @@ table
 navbar
 
 ## vuex web storage
+dispatch
+action
+mutation
