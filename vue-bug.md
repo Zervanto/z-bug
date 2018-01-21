@@ -91,7 +91,8 @@ select
 table
 navbar
 
-## vuex web storage
-dispatch
-action
-mutation
+## vuex
+this.$store.dispatch触发action
+action 执行异步，并commit mutation
+mutation 执行同步，修改state
+computed 映射state
