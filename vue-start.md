@@ -86,6 +86,7 @@ axios('/user/12345/);
 ```
 
 ## vue组件
+修改第三方ui组件的样式时，最外层包裹一个有标识的div,然后基于组件原本的css继承链添加覆盖即可
 tab组件
 select
 table
