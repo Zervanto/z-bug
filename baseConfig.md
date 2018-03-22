@@ -8,8 +8,14 @@
 - svnkit 删除eclipse ,configuration--->org.eclipse.core.runtime
 
 ## git
+git init 
+git add .
+git commit -m ''
+git push
 
 ## java
+安装jdk
+环境变量 JAVA_HOME PATH
 
 ## node 
 
@@ -35,6 +41,7 @@
 
 1、 自行创建C:\mysql-5.7.21-winx64\my.ini，文件内容如下：
 
+```
 [mysqld]
 #设置3306端口
 port = 3306
@@ -54,4 +61,4 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 [mysql]
 # 设置mysql客户端默认字符集
 default-character-set=utf8
-
+```
