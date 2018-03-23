@@ -9,12 +9,7 @@
 js_invoke
 
 ## 通过接口返回字段的值动态渲染页面的时候，不要忽略字段值为空的情况
-```js
-else{
-  alert('不妨报个错');
-  continue;
-}
-```
+
 
 tap点透事件
 click
@@ -25,7 +20,6 @@ click
 ## mui上拉加载方法会导致click时间失效
 动态绑定tap  先off再on
 
-## mui.confirm 给按钮绑定事件在一些设备下会失效
 
 
 ### base64
