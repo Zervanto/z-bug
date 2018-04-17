@@ -229,3 +229,9 @@ html, body {
 ```
 
 content上必须要有height和overflow样式的控制，否则body上设置的overflow: hidden;会使所有content都无法滚动。
+
+
+## input type=tel,number手机布局问题
+
+## ios不支持 new Date("yyyy-mm-dd")格式转化
+改为yyyy/mm/dd
