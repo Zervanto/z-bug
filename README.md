@@ -235,3 +235,12 @@ content上必须要有height和overflow样式的控制，否则body上设置的o
 
 ## ios不支持 new Date("yyyy-mm-dd")格式转化
 改为yyyy/mm/dd
+
+## 清除微信缓存
+
+meta标签 cache-control
+
+js加随机数
+```js
+domument.write('<script src="xxx.js?v='+Math.random()+'"><\/script>')
+```
