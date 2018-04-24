@@ -1,3 +1,16 @@
+function render(element, node){
+    mount(element, node);
+}
+
+function mount(element, node){
+    const component = instantiateComponent(element);
+    const renderedNode = component.mountComponent();
+
+    DOM.empty(node);
+    DOM.appendChildren(node, renderedNode);
+}
+
+
 function creatrElement(type, config, children) {
     const props = Object.assign({},config);
     const childrenLength = [].slice.call(arguments).length - 2;//arguments对象的数组提出来转化为数组
@@ -25,3 +38,8 @@ function instantiateComponent(element){
     }
     return componentInstance;
 }
+
+function mountComponent(component) {
+    return component.mountComponent();
+}
+
