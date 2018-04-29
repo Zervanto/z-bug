@@ -244,3 +244,8 @@ js加随机数
 ```js
 domument.write('<script src="xxx.js?v='+Math.random()+'"><\/script>')
 ```
+
+
+## webpack4
+
+## 阿里云部署项目
