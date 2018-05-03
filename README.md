@@ -188,17 +188,10 @@ window.alert("欢迎访问我们的 Web 页！");
 
 var theResponse = window.prompt("欢迎？","请在此输入您的姓名。");
 
-## mui上拉加载区域会导致click事件失效 需要使用tap
-
-
-## indexOf  函数返回值  校验 
-只能输入数字字母
+## mui上拉加载区域会导致click事件失效 
+需要使用tap事件
 
 ## input 光标控制
-
-## mui坑真尼玛多
-
-## vue demo
 
 ## iOS下软键盘弹出会将整个页面顶上去
 mui
@@ -235,6 +228,9 @@ content上必须要有height和overflow样式的控制，否则body上设置的o
 
 ## ios不支持 new Date("yyyy-mm-dd")格式转化
 改为yyyy/mm/dd
+
+## 微信内置浏览器 window.location.href跳转失效问题
+缓存原因导致不跳转，在url后面加随机数可以解决。
 
 ## 清除微信缓存
 
