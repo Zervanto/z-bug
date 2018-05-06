@@ -98,7 +98,5 @@ action 执行异步，并commit mutation
 mutation 执行同步，修改state
 computed 映射state
 
-/u200d 连体宽字
-sessionStorage传值
 
-同步请求加载框
+
