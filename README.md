@@ -245,3 +245,27 @@ domument.write('<script src="xxx.js?v='+Math.random()+'"><\/script>')
 ## webpack4
 
 ## 阿里云部署项目
+
+## ios android input框 placeholder disabled 字体颜色有差异
+```css
+input[disabled]{
+ color:#ccc;
+ -webkit-text-color:#ccc;
+ opacity:0;
+}
+```
+
+## android 使用input打开相机，不拍直接点返回，无法再次调用通相机。
+webview的关系 5.0以上系统需要重写相机获取图片相关api
+
+## iPhone X适配问题
+定位 下拉框定位 无法定位到最底部
+meta viewport-fit
+全面屛手机图片自适应
+
+## ios input拍照获取图片方向与androidn 不一致 会旋转90度
+
+## ios 点击事件 有时会在下个页面触发
+
+## 媒体查询通过屏幕高度适配
+
